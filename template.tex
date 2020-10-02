@@ -10,6 +10,11 @@
 
 \usepackage{fullpage}
 
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -18,6 +23,15 @@
     linkcolor=black,
     urlcolor=black
 }
+
+
+%Pour les algos
+\floatname{algorithm}{Algorithme}
+\renewcommand{\algorithmicrequire}{\textbf{Entrée:}}
+\renewcommand{\algorithmicensure}{\textbf{Sortie:}}
+\renewcommand{\algorithmicif}{\textbf{si}}
+\renewcommand{\algorithmicthen}{\textbf{alors}}
+\renewcommand{\algorithmicelse}{\textbf{sinon}}
 
 \title{
 {\Huge Page Title}\\
@@ -45,4 +59,22 @@ Faculté des Sciences, Université de Mons}
 
     \section{Section 1}
     text
+
+% ====== exemple d'algo =======
+% \begin{algorithm}
+%     \caption{Recherche linéaire du maximum}
+%     \begin{algorithmic}[1]
+%     \REQUIRE un tableau d’entiers $A$
+%     \ENSURE la valeur du plus grand entier contenu dans $A$
+%     \STATE $max \leftarrow -\infty$
+%     \FOR{$i \leftarrow 1$ `a $longueur[A]$}
+%     \IF{$max < A[i]$}
+%     \STATE $max \leftarrow A[i]$
+%     \ENDIF
+%     \ENDFOR
+%     \RETURN $max$
+%     \end{algorithmic}
+% \end{algorithm}
+
+
 \end{document}
